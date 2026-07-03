@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio informativo sobre animales en peligro de extinción: causas, qué podemos hacer y cómo participar en su conservación.">
+  <title>Animales en peligro de extinción</title>
+  <link rel="stylesheet" href="animales.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">🌿 Animales en peligro</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#informacion">Información</a></li>
+        <li><a href="#accion">Qué hacer</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#encuesta">Encuesta</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== INICIO ===================== -->
+    <section id="inicio" class="seccion hero">
+      <header>
+        <h1>🌿 Animales en peligro de extinción 🌿</h1>
+
+        <!-- Dibujo decorativo de selva hecho en SVG -->
+        <svg class="dibujo-selva" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="30" r="20" fill="#ffd54f"/>
+          <path d="M0,100 L0,70 Q20,40 40,70 L40,100 Z" fill="#388e3c"/>
+          <path d="M50,100 L50,60 Q75,20 100,60 L100,100 Z" fill="#2e7d32"/>
+          <path d="M110,100 L110,75 Q130,45 150,75 L150,100 Z" fill="#43a047"/>
+          <path d="M250,100 L250,65 Q280,25 310,65 L310,100 Z" fill="#2e7d32"/>
+          <path d="M320,100 L320,80 Q335,55 350,80 L350,100 Z" fill="#388e3c"/>
+          <ellipse cx="370" cy="90" rx="25" ry="8" fill="#a1887f"/>
+        </svg>
+      </header>
+
+      <p>Los animales en peligro de extinción son aquellas especies que están a punto de desaparecer del planeta. Esto pasa por la caza, la contaminación y la pérdida de su hábitat natural. Este sitio busca informar de forma clara a jóvenes sobre esta problemática y promover la participación y conciencia comunitaria para su conservación.</p>
+
+      <div class="video-wrapper">
+        <h2>🎬 Video informativo</h2>
+        <video controls preload="metadata">
+          <source src="video-informativo.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video. Puedes abrir el archivo <code>video-informativo.mp4</code> directamente desde la carpeta.
+        </video>
+        <p class="fuente-video">Fuente: "7 Animales en Peligro de Extinción en 2025" — Voces del Reino Animal</p>
+      </div>
+    </section>
+
+    <!-- ===================== INFORMACIÓN ===================== -->
+    <section id="informacion" class="seccion">
+      <h2>🐾 Algunos animales en peligro</h2>
+
+      <div class="galeria">
+        <div class="tarjeta">
+          <div class="icono">🐼</div>
+          <h3>Panda gigante</h3>
+          <p>Vive en los bosques de bambú de China.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">🐅</div>
+          <h3>Tigre de bengala</h3>
+          <p>El felino más grande de Asia.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">🐆</div>
+          <h3>Jaguar</h3>
+          <p>El gran felino de las selvas americanas.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">🐋</div>
+          <h3>Ballena azul</h3>
+          <p>El animal más grande que ha existido.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">🦎</div>
+          <h3>Axolotl mexicano</h3>
+          <p>Anfibio único de los lagos de México.</p>
+        </div>
+      </div>
+
+      <h2>🔥 Causas</h2>
+
+      <div class="infografia">
+        <div class="info-item">
+          <div class="info-icono">🪓</div>
+          <h3>Deforestación</h3>
+          <p>Destruye el hábitat natural donde viven y se reproducen las especies.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-icono">🔫</div>
+          <h3>Caza ilegal</h3>
+          <p>Reduce las poblaciones de especies ya vulnerables.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-icono">🏭</div>
+          <h3>Contaminación</h3>
+          <p>Afecta mares, ríos y el aire donde viven los animales.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-icono">🌡️</div>
+          <h3>Cambio climático</h3>
+          <p>Altera los ecosistemas y las condiciones necesarias para sobrevivir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUÉ PODEMOS HACER ===================== -->
+    <section id="accion" class="seccion">
+      <h2>💚 Qué podemos hacer</h2>
+      <ul class="lista-iconos">
+        <li><span class="emoji">🌱</span> Cuidar el medio ambiente y no generar basura en la naturaleza</li>
+        <li><span class="emoji">🛒</span> No comprar productos hechos con animales en peligro</li>
+        <li><span class="emoji">🏞️</span> Apoyar a las reservas naturales y áreas protegidas</li>
+        <li><span class="emoji">📢</span> Informar a otros sobre la importancia de proteger la fauna</li>
+        <li><span class="emoji">♻️</span> Reducir, reutilizar y reciclar para cuidar los ecosistemas</li>
+      </ul>
+    </section>
+
+    <!-- ===================== RECURSOS ===================== -->
+    <section id="recursos" class="seccion">
+      <h2>📌 Recursos y organizaciones</h2>
+      <p>Estas instituciones trabajan en la conservación de especies y áreas naturales en México y el mundo:</p>
+
+      <div class="galeria recursos-galeria">
+        <div class="tarjeta recurso">
+          <div class="icono">🐆</div>
+          <h3>CONANP</h3>
+          <p>Comisión Nacional de Áreas Naturales Protegidas de México.</p>
+          <p class="pendiente">Sitio web: <em>[agregar enlace verificado por el maestro o tutor]</em></p>
+        </div>
+        <div class="tarjeta recurso">
+          <div class="icono">🌍</div>
+          <h3>WWF</h3>
+          <p>Organización internacional de conservación de la naturaleza.</p>
+          <p class="pendiente">Sitio web: <em>[agregar enlace verificado por el maestro o tutor]</em></p>
+        </div>
+        <div class="tarjeta recurso">
+          <div class="icono">⚖️</div>
+          <h3>PROFEPA</h3>
+          <p>Procuraduría Federal de Protección al Ambiente; recibe denuncias por caza o tráfico ilegal.</p>
+          <p class="pendiente">Sitio web / teléfono: <em>[agregar dato verificado por el maestro o tutor]</em></p>
+        </div>
+      </div>
+      <p class="nota-recursos">Nota: los datos de contacto se dejaron como marcador de texto para que se agregue información verificada y actualizada antes de publicar o entregar el sitio.</p>
+    </section>
+
+    <!-- ===================== ENCUESTA ===================== -->
+    <section id="encuesta" class="seccion">
+      <h2>📝 Encuesta rápida</h2>
+      <p>Responde estas preguntas para poner a prueba lo que sabes sobre la conservación de animales en peligro.</p>
+
+      <form id="formEncuesta" class="formulario">
+        <fieldset class="pregunta">
+          <legend>1. ¿La deforestación es una causa de pérdida de hábitat?</legend>
+          <label><input type="radio" name="q1" value="1" required> Sí</label>
+          <label><input type="radio" name="q1" value="0"> No</label>
+        </fieldset>
+
+        <fieldset class="pregunta">
+          <legend>2. ¿Comprar productos hechos con animales en peligro ayuda a protegerlos?</legend>
+          <label><input type="radio" name="q2" value="0" required> Sí</label>
+          <label><input type="radio" name="q2" value="1"> No</label>
+        </fieldset>
+
+        <fieldset class="pregunta">
+          <legend>3. ¿El cambio climático puede afectar a los animales en peligro?</legend>
+          <label><input type="radio" name="q3" value="1" required> Sí</label>
+          <label><input type="radio" name="q3" value="0"> No</label>
+        </fieldset>
+
+        <fieldset class="pregunta">
+          <legend>4. ¿Apoyar a las reservas naturales ayuda a conservar especies?</legend>
+          <label><input type="radio" name="q4" value="1" required> Sí</label>
+          <label><input type="radio" name="q4" value="0"> No</label>
+        </fieldset>
+
+        <button type="submit" class="btn">Enviar respuestas</button>
+      </form>
+
+      <div id="resultadoEncuesta" class="resultado-encuesta" hidden></div>
+
+      <div class="estadisticas" id="estadisticasEncuesta">
+        <p>👥 Participantes: <strong id="statParticipantes">0</strong></p>
+        <p>📊 Puntaje promedio: <strong id="statPromedio">0%</strong></p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="seccion">
+      <h2>✉️ Contacto</h2>
+      <p>¿Tienes dudas o comentarios sobre este sitio? Escríbenos.</p>
+
+      <form id="formContacto" class="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required minlength="2" placeholder="Tu nombre">
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required placeholder="tucorreo@ejemplo.com">
+
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="duda">Duda sobre el contenido</option>
+          <option value="comentario">Comentario</option>
+          <option value="reporte">Reportar una especie o caso local</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required minlength="5" placeholder="Escribe tu mensaje aquí"></textarea>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+        <p id="estadoContacto" class="estado-form" role="status"></p>
+      </form>
+
+      <p class="contador-mensajes">📨 Mensajes recibidos: <strong id="statMensajes">0</strong></p>
+    </section>
+
+    <!-- ===================== EQUIPO ===================== -->
+    <section id="equipo" class="seccion">
+      <h2>👩‍💻 Equipo y organización del proyecto</h2>
+      <p>Este proyecto fue realizado por un equipo de una sola integrante, quien cubrió todos los roles de trabajo:</p>
+
+      <div class="tabla-wrapper">
+        <table class="tabla-roles">
+          <thead>
+            <tr>
+              <th>Rol</th>
+              <th>Responsable</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🎨 Diseño</td>
+              <td>Fátima</td>
+              <td>Colores, estilos, íconos y diseño responsive del sitio.</td>
+            </tr>
+            <tr>
+              <td>💻 Programación</td>
+              <td>Fátima</td>
+              <td>Estructura HTML, estilos CSS e interactividad en JavaScript.</td>
+            </tr>
+            <tr>
+              <td>📝 Contenido</td>
+              <td>Fátima</td>
+              <td>Investigación y redacción de la información sobre especies en peligro.</td>
+            </tr>
+            <tr>
+              <td>🔍 Pruebas</td>
+              <td>Fátima</td>
+              <td>Revisión de navegación, formularios y diseño en distintos tamaños de pantalla.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>🗓️ Cronograma</h3>
+      <div class="tabla-wrapper">
+        <table class="tabla-roles">
+          <thead>
+            <tr>
+              <th>Fase</th>
+              <th>Actividad</th>
+              <th>Fecha estimada</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Investigación y recopilación de información</td>
+              <td>[Fecha]</td>
+              <td>✅ Completado</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Diseño y estructura del sitio</td>
+              <td>[Fecha]</td>
+              <td>✅ Completado</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Programación de formularios e interactividad</td>
+              <td>[Fecha]</td>
+              <td>✅ Completado</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Pruebas y ajustes finales</td>
+              <td>[Fecha]</td>
+              <td>⏳ Pendiente</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Entrega final</td>
+              <td>[Fecha]</td>
+              <td>⏳ Pendiente</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="nota-recursos">Nota: reemplaza los [Fecha] y el estado de cada fase con los datos reales de tu cronograma antes de entregar el proyecto.</p>
+    </section>
+
+    <!-- Dibujo decorativo de huellas -->
+    <div class="huellas">
+      <span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span>
+    </div>
+
+  </main>
+
+  <footer>
+    <p class="autor">Trabajo escolar de Fátima - CECYTEM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
